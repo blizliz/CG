@@ -1,1 +1,1 @@
-# CG
+# computer graphics course
