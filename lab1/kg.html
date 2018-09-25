@@ -1,3 +1,5 @@
+<!--Безлуцкая Е.Н. М80-307Б -->
+<!-- Условие: вар2. (x^2 + y^2)^2 = a^2(x^2 - y^2) -->
 <html>
     <head>
         <meta charset="utf8"/>
@@ -85,7 +87,6 @@
 
         let par = Math.ceil(canvasWidth / 2 - 90);
         par = (10 - par % 10) + par;
-        // alert(par);
 
         function f1(x) {
             y1 = -Math.sqrt((-2 * x * x - par * par + Math.sqrt(8 * par * par * x * x + Math.pow(par, 4))) / 2);
@@ -145,7 +146,7 @@
                 ctx.lineTo(i, -3);
                 ctx.moveTo(i, 0);
             }
-            //стрелка
+            //стрелка для оси X
             ctx.lineTo(widthHalf - 20, 0);
             ctx.lineTo(widthHalf - 20 -15, -3);
             ctx.moveTo(widthHalf - 20, 0);
@@ -165,7 +166,7 @@
                 ctx.lineTo(3, i);
                 ctx.moveTo(0, i);
             }
-            //стрелка
+            //стрелка для оси Y
             ctx.lineTo(0, -heightHalf + 20);
             ctx.lineTo(-3, -heightHalf + 20 + 15);
             ctx.moveTo(0, -heightHalf + 20);
@@ -174,12 +175,14 @@
 
             ctx.strokeStyle = '#4c4d9f';
             
-            // moveTo(Line[0][0],Line[0][1])
+            //Линия выше оси Х
             ctx.beginPath();
             for (var i = 0; i < Line1.length; i++) { //
                 ctx.lineTo(Line1[i][0], Line1[i][1]);
                 ctx.stroke();
             }
+            
+            //Линия ниже оси Х
             ctx.beginPath();
             for (var i = 0; i < Line2.length; i++) { //
                 ctx.lineTo(Line2[i][0], Line2[i][1]);
