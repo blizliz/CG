@@ -102,7 +102,11 @@
         Line2 = [];
 
         function start(event) {
-            const a = Number(document.getElementById('param').value)
+            const a = Number(document.getElementById('param').value);
+            if (!a) {
+                alert("Incorrect input!");
+            }
+            
             if (a == 0) {
                 par = 0;
             }
