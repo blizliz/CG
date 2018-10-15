@@ -2,8 +2,6 @@ const btnIso = document.getElementById('iso');
 btnIso.addEventListener('click', isometric);
 
 function isometric(event) {
-    var MODEL_MIN_X = -1, MODEL_MAX_X = 1;
-    var MODEL_MIN_Y = -1, MODEL_MAX_Y = 1;
     var SCALE = 1;
     var MIN_SCALE = 1.1;
     var MAX_SCALE = 0;
