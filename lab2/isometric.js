@@ -43,7 +43,6 @@ function isometric(event) {
             if(SCALE > 0.4) {
                 SCALE -= 0.1;
                 render();
-                console.log(SCALE);
             }
         }
         if(e.deltaY > 0) {
