@@ -1,0 +1,32 @@
+<!-- Безлуцкая Е.Н. М8О-307Б -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Octahedron</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="navigation">
+          <button id="ort" type="button">Orthographic</button>
+          <button id="iso" type="button">Isometric</button>
+        </div>
+        <div id="ort_canvas_wrapper">
+          <canvas id="ort_canvas" width="600" height="600"></canvas>
+        </div>
+        <div id="iso_canvas_wrapper" class="hide">
+          <canvas id="iso_canvas" width="600" height="600"></canvas>
+          <div class="note">
+            Зажмите левую кнопку мыши и передвигайте курсор для вращения октаэдра<br>
+            Используйте колесико мыши для изменения масштаба
+          </div>
+        </div>
+        <script src="vector.js"></script>
+        <script src="orthographic.js"></script>
+        <script src="isometric.js"></script>
+        <script>
+          document.getElementById('ort').click();
+        </script>
+    </body>
+</html>

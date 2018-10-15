@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+}
+
+.hide {
+  display: none !important;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation button {
+  background-color: black;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  flex: 1;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+canvas {
+  display: block;
+  background-color: black;
+}
+
+#iso_canvas_wrapper, #ort_canvas_wrapper {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.note {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  border: 1px solid white;
+  width: 400px;
+  height: 300px;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
