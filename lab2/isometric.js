@@ -92,19 +92,6 @@ function isometric(event) {
         );
     }
 
-    function renderPoint(point) {
-        const projectedPoint = project(point);
-        const x = projectedPoint[0],
-            y = projectedPoint[1];
-
-        ctx.beginPath();
-        ctx.moveTo(x, y);
-        ctx.lineTo(x + 1, y + 1);
-        ctx.lineWidth = 4;
-        ctx.strokeStyle = 'white';
-        ctx.stroke();
-    }
-
     function renderTriangle(triangle, color) {
         projectedTriangle = triangle.map(project);
         const a = projectedTriangle[0],
