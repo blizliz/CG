@@ -5,3 +5,6 @@
 
 Вариант многогранника:
 Правильный октаэдр
+
+https://rawgit.com/blizliz/CG/master/lab2/oct.html
+
