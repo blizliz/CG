@@ -3,3 +3,5 @@
 Задание: Написать и отладить программу, строящую изображение заданной замечательной кривой.
 
 Вариант: (x<sup>2</sup> + y<sup>2</sup>)<sup>2</sup> = a<sup>2</sup>(x<sup>2</sup> - y<sup>2</sup>)
+
+https://rawgit.com/blizliz/CG/master/lab1/kg.html
