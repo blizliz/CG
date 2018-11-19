@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.canvas-wrapper {
+  position: relative;
+}
+
+.canvas-wrapper img {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+canvas {
+  display: block;
+  background-color: black;
+}
+
+.range {
+  margin: 10px 0 20px;
+}
+
+.range input {
+  width: 100%;
+}
+
+.note {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  border: 1px solid white;
+  width: 400px;
+  /*height: 300px;*/
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}

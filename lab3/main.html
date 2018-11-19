@@ -1,0 +1,43 @@
+<!-- Безлуцкая Е.Н. М8О-307Б -->
+<!-- Используя результаты Л.Р.No2, аппроксимировать заданное тело выпуклым многогранником. Точность аппроксимации задается пользователем. Обеспечить возможность вращения и масштабирования многогранника и удаление невидимых линий и поверхностей. Реализовать простую модель закраски для случая одного источника света.
+Параметры освещения и отражающие свойства материала задаются пользователем в диалоговом режиме.
+
+Вариант: Прямой эллиптический цилиндр. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Elliptical cylinder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class='canvas-wrapper'>
+  <img src='lightbulb.png' width='50' height='68' alt='light bulb'>
+  <canvas id="iso_canvas" width="600" height="600"></canvas>
+</div>
+
+<div class="note">
+  <div>
+    <label for="approx">Точность аппроксимации</label>
+    <div class='range'>
+      <input type="range" id="approx" name="volume"
+             min="6" max="38" step="1" value="6">
+    </div>
+    <label for="KSLI">Коэффициент диффузного отражения рассеянного света</label>
+    <div class='range'>
+      <input type="range" id="KSLI" name="volume"
+             min="0" max="1" step="0.01" value="0.15">
+    </div>
+    <label for="KSFI">Коэффициент диффузного отражения падающего света</label>
+    <div class='range'>
+      <input type="range" id="KSFI" name="volume"
+             min="0" max="1" step="0.01" value="0.15">
+    </div>
+
+  </div>
+</div>
+<script src="vector.js"></script>
+<script src="isometric.js"></script>
+</body>
+</html>
