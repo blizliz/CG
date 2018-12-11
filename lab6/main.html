@@ -1,0 +1,39 @@
+<!-- Безлуцкая Е.Н. М8О-307Б -->
+<!-- Вариант: Прямой эллиптический цилиндр. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel='stylesheet' href='style.css'>
+  <title>Elliptical cylinder</title>
+</head>
+<body onLoad="onLoad();">
+  <div id="container" style="width:600px; height:600px; background-color:#000000">
+  </div>
+  <div class='controls'>
+    <div class='note'>
+      <p>
+        Зажмите левую кнопку мыши и передвигайте курсор для вращения октаэдра
+      </p>
+      <p>
+        Используйте колесико мыши для изменения масштаба
+      </p>
+    </div>
+    <label for="approx">Точность аппроксимации</label>
+    <div class='range'>
+      <input type="range" id="approx" name="volume"
+             min="6" max="60" step="2" value="8">
+    </div>
+    <label for="intens">Интенсивность света</label>
+    <div class='range'>
+      <input type="range" id="intens" name="volume"
+             min="0" max="1" step="0.01" value="0.8">
+    </div>
+  </div>
+
+  <script src="Three.js"></script>
+  <script src="OrbitControls.js"></script>
+  <script type="main.js"></script>
+  <script src="cylinder.js"></script>
+</body>
+</html>
