@@ -1,0 +1,29 @@
+body {
+  /*height: 100vh;*/
+  /*width: 100%;*/
+  /*max-width: 1280px;*/
+  /*margin: 0 auto !important;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: space-around;*/
+}
+
+canvas {
+  /*border: 1px solid #eeeeee;*/
+}
+
+.help {
+  position: fixed;
+  top: 40%;
+  right: 10%;
+  width: 300px;
+  font-family: sans-serif;
+  height: 600px;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.help div {
+  padding: 20px;
+  border: 1px solid black;
+}
